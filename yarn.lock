@@ -244,6 +244,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@azure/msal-common@npm:14.12.0":
+  version: 14.12.0
+  resolution: "@azure/msal-common@npm:14.12.0"
+  checksum: 9a987b7b9b6453500481ec48224b4d9f728c62ac584f9a35ef519eff46016fc63c1a7dc159f725a5ec3748bf1ade352654fd7a7170ba42bc27ca263a01cf59db
+  languageName: node
+  linkType: hard
+
 "@azure/msal-common@npm:^7.0.0":
   version: 7.6.0
   resolution: "@azure/msal-common@npm:7.6.0"
@@ -251,7 +258,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/msal-node@npm:^1.0.3, @azure/msal-node@npm:^1.10.0":
+"@azure/msal-node@npm:^1.10.0":
   version: 1.18.4
   resolution: "@azure/msal-node@npm:1.18.4"
   dependencies:
@@ -259,6 +266,17 @@ __metadata:
     jsonwebtoken: ^9.0.0
     uuid: ^8.3.0
   checksum: fecced6bf5ba45379146dc76aa29587640a4919ebeb4713070247b4235ec5abe7c21ef8d84dae4cc1c5584368fa4773f8347ebc60867f295a65a0ed2143339aa
+  languageName: node
+  linkType: hard
+
+"@azure/msal-node@npm:^2.9.2":
+  version: 2.9.2
+  resolution: "@azure/msal-node@npm:2.9.2"
+  dependencies:
+    "@azure/msal-common": 14.12.0
+    jsonwebtoken: ^9.0.0
+    uuid: ^8.3.0
+  checksum: a2b51d4085d20cbac84752b9e68a5a22c7c9dbfdbc25a1713ee5e6918a504928f82e66c9317fc78db4f12053e7debd477b984cab578e0bea269aacc0862e7219
   languageName: node
   linkType: hard
 
@@ -5494,10 +5512,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@microsoft/mgt-electron-provider@workspace:packages/providers/mgt-electron-provider"
   dependencies:
-    "@azure/msal-node": ^1.0.3
+    "@azure/msal-node": ^2.9.2
     "@microsoft/mgt-element": "*"
     "@microsoft/microsoft-graph-client": 3.0.2
-    electron: ^22.3.25
+    electron: ^30.0.2
   languageName: unknown
   linkType: soft
 
@@ -10106,13 +10124,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.11.26":
-  version: 16.18.96
-  resolution: "@types/node@npm:16.18.96"
-  checksum: c5b4c20868e1ecb2e3b975b37aeeb5790b3a4f1472b496fae779ac4f14ba4fb4c0e9ed8e9b6eb389e5a074371056130c9d6506705b144b4f6985ffa844556242
-  languageName: node
-  linkType: hard
-
 "@types/node@npm:^16.18.12":
   version: 16.18.59
   resolution: "@types/node@npm:16.18.59"
@@ -10126,6 +10137,15 @@ __metadata:
   dependencies:
     undici-types: ~5.26.4
   checksum: 972f8b214f961b6c8d99f84aab8bfadc656bb71fc7ad4a543ad3405286c95f27385ee0c3844f88d612f3cf225cd4d49ce8a7d9aea05a2aba9b2524ac525040aa
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^20.9.0":
+  version: 20.14.2
+  resolution: "@types/node@npm:20.14.2"
+  dependencies:
+    undici-types: ~5.26.4
+  checksum: 265362479b8f3b50fcd1e3f9e9af6121feb01a478dff0335ae67cccc3babfe45d0f12209d3d350595eebd7e67471762697b877c380513f8e5d27a238fa50c805
   languageName: node
   linkType: hard
 
@@ -17906,16 +17926,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron@npm:^22.3.25":
-  version: 22.3.27
-  resolution: "electron@npm:22.3.27"
+"electron@npm:^30.0.2":
+  version: 30.1.0
+  resolution: "electron@npm:30.1.0"
   dependencies:
     "@electron/get": ^2.0.0
-    "@types/node": ^16.11.26
+    "@types/node": ^20.9.0
     extract-zip: ^2.0.1
   bin:
     electron: cli.js
-  checksum: b9c5ad263c45065b42f612931de95e0e29f9e735d4f47f51298700788492e6a107d72f4982d421afc71f25364660579d5d15061f8198211ac9d507372ca8bbe1
+  checksum: 74958c84b251ebf40688a6ef382dcf75af11a071399ab583bcf05f52d727b7d5195f08277792e527593d50915e4799e5ce5ec060604db73749ed0344972e4ec8
   languageName: node
   linkType: hard
 
